@@ -4,22 +4,22 @@ A simple JavaFX-based Medical Management System with user login, registration, d
 
 Features
 
-User Login & Registration
-
-Doctor List & Hospital List
-
-Admin Login & Dashboard
-
-JavaFX FXML Pages
-
-Database Support (MySQL)
+  User Login & Registration
+  
+  Doctor List & Hospital List
+  
+  Admin Login & Dashboard
+  
+  JavaFX FXML Pages
+  
+  Database Support (MySQL)
 
 Tech Stack
 
-JavaFX
-
-Java
-
-MySQL (optional)
-
-Scene Builder
+  JavaFX
+  
+  Java
+  
+  MySQL (optional)
+  
+  Scene Builder
