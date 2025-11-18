@@ -4,9 +4,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.HBox?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="67.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="67.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medical_system.ItemController">
    <children>
-      <Label alignment="CENTER" prefHeight="115.0" prefWidth="54.0" text="Label">
+      <Label fx:id="DoctorLabelName" alignment="CENTER" prefHeight="115.0" prefWidth="54.0" text="Label">
          <HBox.margin>
             <Insets left="70.0" />
          </HBox.margin>
@@ -14,7 +14,7 @@
             <Insets left="20.0" />
          </opaqueInsets>
       </Label>
-      <Label alignment="CENTER" prefHeight="115.0" prefWidth="54.0" text="Label">
+      <Label fx:id="doctorsDepartment" alignment="CENTER" prefHeight="115.0" prefWidth="54.0" text="Label">
          <HBox.margin>
             <Insets left="70.0" />
          </HBox.margin>
@@ -22,7 +22,7 @@
             <Insets left="60.0" />
          </opaqueInsets>
       </Label>
-      <Label alignment="CENTER" prefHeight="115.0" prefWidth="54.0" text="Label">
+      <Label fx:id="doctorsPhoneNumber" alignment="CENTER" prefHeight="115.0" prefWidth="54.0" text="Label">
          <HBox.margin>
             <Insets left="70.0" />
          </HBox.margin>

@@ -16,8 +16,11 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
     }
-
     public static void main(String[] args) {
+        DataBaseManagement db = new DataBaseManagement();
+//        System.out.println("working ...");
         launch();
+
     }
+
 }

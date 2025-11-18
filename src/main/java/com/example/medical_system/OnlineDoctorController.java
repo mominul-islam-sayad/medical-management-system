@@ -25,6 +25,8 @@ public class OnlineDoctorController implements Initializable {
     private Label PhoneNo;
 
     String[] Doctors = new String[3];
+    ItemController itemController = new ItemController();
+    DataBaseManagement dataBaseManagement = new DataBaseManagement();
 
 
 
@@ -44,18 +46,19 @@ public class OnlineDoctorController implements Initializable {
         stage.show();
     }
 
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Node [] nodes = new Node[3];
 
-        for (int i = 0; i< nodes.length; i++){
+        for (int i = 0; i< dataBaseManagement.noOfRowInDb(); i++){
             try{
                 final int j = i;
-                nodes[i] = FXMLLoader.load(getClass().getResource("HospitalItem.fxml"));
-                pnItems.getChildren().add(nodes[i]);
 
-            }catch(IOException e) {
+//                nodes[i] = FXMLLoader.load(getClass().getResource(itemController.changeSecen()));
+//                pnItems.getChildren().add(nodes[i]);
+                nodes[i] = itemController.sakib(i);
+
+            }catch(Exception e) {
                 throw new RuntimeException(e);
             }
         }
